@@ -1,31 +1,24 @@
 import "./App.css";
-import {
-    Random,
-    RandomErr,
-    RandomUpdate,
-    RandomReactQuery,
-} from "./components/Random";
-import { GithubUser } from "./components/GithubUser";
+import { Link, Outlet } from "react-router-dom";
 
 function App() {
     return (
         <div className="App">
-            <header className="App-header">Learn React Query</header>
-            <main>
-                <div>
-                    <h2>Lesson One: Why React Query</h2>
-                    <Random />
-                    <RandomErr />
-                    <RandomUpdate />
-                    <br></br>
-                    <RandomReactQuery />
-                </div>
-                <hr></hr>
-                <div>
-                    <h2>Lesson Two: First query</h2>
-                    <GithubUser username={"GazzaMacD"} />
-                </div>
-            </main>
+            <header className="App-header">
+                <nav>
+                    <Link className="App-logo" to="/">
+                        Learn React Query
+                    </Link>
+                </nav>
+                <nav>
+                    <Link className="App-link" to="/getting-started">
+                        Getting Started
+                    </Link>
+                </nav>
+            </header>
+            <div className="App-main">
+                <Outlet />
+            </div>
         </div>
     );
 }

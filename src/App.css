@@ -3,16 +3,29 @@
 }
 
 .App-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: #282c34;
     min-height: 50px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
+    justify-content: space-between;
     color: white;
+}
+
+.App-logo {
+    color: #61dafb;
+    padding: 10px;
+    text-decoration: none;
+    font-size: calc(10px + 2vmin);
 }
 
 .App-link {
     color: #61dafb;
+    padding: 10px;
+    font-size: calc(6px + 2vmin);
+}
+.App-main {
+    padding: 60px 10px 100px 10px;
 }
