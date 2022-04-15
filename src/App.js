@@ -5,6 +5,7 @@ import {
     RandomUpdate,
     RandomReactQuery,
 } from "./components/Random";
+import { GithubUser } from "./components/GithubUser";
 
 function App() {
     return (
@@ -18,6 +19,11 @@ function App() {
                     <RandomUpdate />
                     <br></br>
                     <RandomReactQuery />
+                </div>
+                <hr></hr>
+                <div>
+                    <h2>Lesson Two: First query</h2>
+                    <GithubUser username={"GazzaMacD"} />
                 </div>
             </main>
         </div>
