@@ -11,8 +11,8 @@ function App() {
           </Link>
         </nav>
         <nav>
-          <Link className="App-link" to="/getting-started">
-            Getting Started
+          <Link className="App-link" to="/exercises">
+            Exercises
           </Link>
           <Link className="App-link" to="/issues">
             Issues
