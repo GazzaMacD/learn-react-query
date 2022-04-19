@@ -6,6 +6,7 @@ import {
 } from '../components/Random';
 import { GithubUser } from '../components/GithubUser';
 import { Labels } from '../components/Labels';
+import { Users } from '../components/Users';
 import styles from '../page-styles/gs.module.css';
 
 function Exercises() {
@@ -29,6 +30,11 @@ function Exercises() {
       <div>
         <h2>Index Query</h2>
         <Labels />
+      </div>
+      <hr></hr>
+      <div>
+        <h2>Individual Records Query</h2>
+        <Users />
       </div>
     </div>
   );
