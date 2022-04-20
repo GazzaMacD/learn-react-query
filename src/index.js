@@ -14,7 +14,7 @@ import { worker } from '@uidotdev/react-query-api';
 const queryClient = new QueryClient();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-/** star here --> /
+/** star here --> */
 new Promise((res) => setTimeout(res, 100))
   .then(() =>
     worker.start({
@@ -24,23 +24,23 @@ new Promise((res) => setTimeout(res, 100))
   )
   .then(() => {
     /*  */
-root.render(
-  <React.StrictMode>
-    <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<App />}>
-            <Route index element={<Home />} />
-            <Route path="/exercises" element={<Exercises />} />
-            <Route path="/issues" element={<Issues />} />
-            <Route path="/add" element={<AddIssue />} />
-            <Route path="/issue/:number" element={<Issue />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </QueryClientProvider>
-  </React.StrictMode>,
-);
-/* star here --> /
+    root.render(
+      <React.StrictMode>
+        <QueryClientProvider client={queryClient}>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<App />}>
+                <Route index element={<Home />} />
+                <Route path="/exercises" element={<Exercises />} />
+                <Route path="/issues" element={<Issues />} />
+                <Route path="/add" element={<AddIssue />} />
+                <Route path="/issue/:number" element={<Issue />} />
+              </Route>
+            </Routes>
+          </BrowserRouter>
+        </QueryClientProvider>
+      </React.StrictMode>,
+    );
+    /* star here --> */
   });
 /**/
