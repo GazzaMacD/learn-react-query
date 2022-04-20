@@ -14,7 +14,7 @@ import { worker } from '@uidotdev/react-query-api';
 const queryClient = new QueryClient();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-/*
+/** star here --> /
 new Promise((res) => setTimeout(res, 100))
   .then(() =>
     worker.start({
@@ -23,7 +23,7 @@ new Promise((res) => setTimeout(res, 100))
     }),
   )
   .then(() => {
-    */
+    /*  */
 root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
@@ -41,6 +41,6 @@ root.render(
     </QueryClientProvider>
   </React.StrictMode>,
 );
-/*
+/* star here --> /
   });
-  */
+/**/
